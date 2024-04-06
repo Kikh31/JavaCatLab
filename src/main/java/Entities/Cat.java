@@ -15,6 +15,7 @@ import java.time.LocalDate;
 public class Cat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cat_id")
     private Integer catId;
 
     //private Integer ownerId;
@@ -24,6 +25,7 @@ public class Cat {
 
     private String name;
 
+    @Column(name = "birth_date")
     private LocalDate birthDate;
 
     private String breed;
